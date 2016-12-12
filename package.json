@@ -8,7 +8,8 @@
   },
   "author": "flieh",
   "license": "MIT",
-   "dependencies": {
+  "dependencies": {
+    "handlebars": "^4.0.6",
     "whatwg-fetch": "1.0.0"
   },
   "devDependencies": {
