@@ -4,20 +4,3 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
-
-div {
-  margin : 5px;
-  padding : 5px;
-}
-
-#nav {
-  background-color: gray;
-  color: black;
-  width : 25%
-}
-
-#main {
-  color: red;
-  background-color: blue;
-  width: 75%;
-}
