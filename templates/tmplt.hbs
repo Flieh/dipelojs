@@ -2,10 +2,19 @@
     <h1 class="player-list-title">Elo Ratings Droidippy Diplomacy</h1>
     <div class="body">
       <table class="player-stats-table">
-        <tr><th>Player<th>Games Played<th>Rating<th>Latest Games
         <tr>
+            <th>Player</th>
+            <th>Games Played</th>
+            <th>Rating</th>
+            <th>Latest Game</th>
+        </tr>
+
         {{#each playerStats}}
-        <tr><td>{{playerEmail}}<td>{{playerGamesPlayed}}<td>{{playerRating}}<td>{{lastGamePlayed}}
+        <tr><td>{{truncEmail this.playerEmail}}</td>
+            <td>{{playerGamesPlayed}}</td>
+            <td>{{playerRating}}</td>
+            <td>{{lastGamePlayed}}</td>
+        </tr>
         {{/each}}
 
       </table>

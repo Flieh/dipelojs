@@ -36,24 +36,21 @@ table , div, body {
 }
 
 div {
-  background-color: darkgreen;
+  background-color: #333;
 }
 .player-list-title {
   padding: 10px;
-  color: red;
-  background-color: darkgreen;
+  background-color: #BBB;
 }
 
 .player-stats-table {
-  width: 75%;
-  background-color: lightsalmon;
-  color: blue;
+  background-color: #CCC;
 }
 
 .entry {
-  background-color: lawngreen;
+  background-color: #500;
 }
 
 .body {
-  background-color: rebeccapurple;
+  background-color: #333;
 }
