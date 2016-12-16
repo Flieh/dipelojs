@@ -4,3 +4,10 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
+.player-list-title {
+  color: red;
+}
+
+.player-stats-table {
+  color: blue;
+}
