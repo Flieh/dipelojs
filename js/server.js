@@ -13,3 +13,9 @@ Handlebars.registerHelper('truncEmail', function(string) {
   var emailParts =  string.split('@');
   return emailParts[0];
 });
+
+Handlebars.registerHelper('formatDate', function(dateString) {
+  var d = new Date(dateString);
+  var dotm = d.get
+
+});

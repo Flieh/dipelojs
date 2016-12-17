@@ -1,26 +1,3 @@
-@font-face {
-    font-family: "centabel";
-    src: url("../fonts/centabel.woff") format('woff');
-}
-@font-face {
-    font-family: "Gamaliel";
-    src: url("../fonts/Gamaliel.woff") format('woff');
-}
-
-@font-face {
-	font-family: "pristina";
-	src : url("../fonts/pristina.woff") format('woff');
-}
-
-@font-face {
-	font-family: "goodfish";
-	src: url("../fonts/goodfish it.woff") format('woff');
-}
-
-@font-face {
-	font-family: "lindenhill";
-	src: url("../fonts/LindenHill-webfont.woff") format('woff');
-}
 
 html {
   box-sizing: border-box;
