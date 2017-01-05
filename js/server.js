@@ -1,5 +1,10 @@
 //
 $.getJSON( "./json/playerStats.json", function(data) {
+    _.remove(data, function(item) {
+      var now = new Date();
+      var lastPlayed = new Date(item.lastGamePlayed);
+      return ((now - lastPlayed) > 5356800000);
+    });
     var sortedData = _.orderBy(data,"playerRating","desc");
     var context = {playerStats: sortedData};
 
@@ -16,6 +21,9 @@ Handlebars.registerHelper('truncEmail', function(string) {
 
 Handlebars.registerHelper('formatDate', function(dateString) {
   var d = new Date(dateString);
-  var dotm = d.get
-
+  var date = d.getDate();
+  var monthIndex = d.getMonth();
+  var year = d.getFullYear();
+  var monthList = ["JAN","FEB","MAR","APR","MAY","JUN","JUL","AUG","SEP","OCT","NOV","DEC"];
+  return date + "-" + monthList[monthIndex] + "-" + year;
 });
