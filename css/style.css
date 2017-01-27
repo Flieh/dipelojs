@@ -1,22 +1,28 @@
-git
 html {
   box-sizing: border-box;
 }
 *, *:before, *:after {
   box-sizing: inherit;
 }
-
-table , div, body {
-  font-family: "Special Elite";
-  margin: 10px;
-  padding: 10px;
+body {
+  margin: 0;
 }
-
+div, table, h1, h2{
+  border: 1px solid white;
+  border-radius: 5px;
+  margin: 0 auto 0 auto;
+  padding: 10px;
+  font-family: "Special Elite";
+}
 div {
+  max-width: 750px;
   background-color: #333;
 }
+
 .player-list-title {
+  font-size: 20px;
   padding: 10px;
+  margin: 0 auto 10px auto;
   background-color: #BBB;
 }
 
@@ -30,4 +36,16 @@ div {
 
 .body {
   background-color: #333;
+}
+.active-player {
+
+}
+.inactive-player {
+  color: gray;
+  font-size: 10px;
+}
+.main {
+}
+#display {
+  max-width: 1200px;
 }

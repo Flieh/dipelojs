@@ -1,22 +1,21 @@
-  <div class="entry">
-    <h1 class="player-list-title">Elo Ratings Droidippy Diplomacy</h1>
-    <div class="body">
-      <table class="player-stats-table">
-        <tr>
-            <th>Player</th>
-            <th>Games Played</th>
-            <th>Rating</th>
-            <th>Latest Game</th>
-        </tr>
-
+<div class="entry">
+  <h1 class="player-list-title text-center block-center">Elo Ratings Droidippy Diplomacy</h1>
+  <div class="main">
+    <table class="player-stats-table table-responsive">
+        <tr class=''>
+          <th class='text-left'>Player</th>
+          <th class='text-center'>Games</th>
+          <th class='text-center'>Rating</th>{{!--
+          <th class='text-center'>Latest Game</th>--}}
+        </tr>        
         {{#each playerStats}}
-        <tr><td>{{truncEmail this.playerEmail}}</td>
-            <td>{{playerGamesPlayed}}</td>
-            <td>{{playerRating}}</td>
-            <td>{{formatDate lastGamePlayed}}</td>
+        <tr>
+          <td class='text-left'>{{{formatEmail this.playerEmail}}}</td>
+          <td class='text-center'>{{{formatCell this.playerGamesPlayed}}}</td>
+          <td class='text-center'>{{{formatCell this.playerRating}}}</td>{{!--
+          <td class='text-center'>{{{formatCell this.lastGamePlayed}}}</td>--}}
         </tr>
         {{/each}}
-
-      </table>
-    </div>
+    </table>
   </div>
+</div>
